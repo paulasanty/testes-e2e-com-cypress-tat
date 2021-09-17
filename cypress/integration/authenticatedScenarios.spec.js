@@ -36,7 +36,7 @@ describe('Scenarios where authentication is a pre-requirement', () => {
 
   it('Log out', { tags: '@desktop-and-tablet' }, () => {
     cy.visit('/')
-    cy.wait(2000)
+    cy.wait('@getNotes')
 
     /* ==== Generated with Cypress Studio ==== */
     cy.get('.nav > :nth-child(2) > a').click()
