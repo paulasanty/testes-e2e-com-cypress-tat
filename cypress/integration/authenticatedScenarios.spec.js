@@ -34,7 +34,7 @@ describe('Scenarios where authentication is a pre-requirement', () => {
     })
   })
 
-  it('Log out', () => {
+  it('Log out', { tags: '@desktop-and-tablet' }, () => {
     cy.visit('/')
     cy.wait('@getNotes')
 
